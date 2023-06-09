@@ -1,0 +1,44 @@
+<form class="login-form flex flex-column">
+
+  <p class="login-text">
+    <span class="fa-stack fa-lg text-lg mb-4">
+
+      <mat-icon class="sizee">person_add</mat-icon>
+    </span>
+  </p>
+
+  <mat-form-field class="login-username" autofocus="true"  required="true" placeholder="Nombre de" >
+    <mat-label>Usuario</mat-label>
+    <input type="text" matInput placeholder="Nombre de usuario">
+  </mat-form-field>
+
+  <mat-form-field class="login-username" autofocus="true"  required="true" placeholder="Nombre de" >
+    <mat-label>Nombre</mat-label>
+    <input type="text" matInput placeholder="Nombre de usuario">
+  </mat-form-field>
+
+  <mat-form-field type="password" class="login-password" required="true" placeholder="Password">
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Contraseña">
+  </mat-form-field>
+
+  <button mat-flat-button color="primary">
+    <mat-icon>save</mat-icon>
+    Crear Cuenta
+  </button>
+
+
+
+  <div  class="flex justify-content-end mt-2" autofocus="true">
+    <button>
+      <a routerLink="/auth/login"  >
+        <b>¿Ya tienes cuenta?</b>
+      </a>
+    </button>
+  </div>
+
+</form>
+
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div>
+

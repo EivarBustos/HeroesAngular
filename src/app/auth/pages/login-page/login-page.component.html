@@ -1,0 +1,40 @@
+<div class="login-form flex flex-column">
+
+  <p class="login-text">
+    <span class="fa-stack fa-lg text-lg mb-4">
+
+      <mat-icon class="sizee">person</mat-icon>
+    </span>
+  </p>
+
+  <mat-form-field class="login-username" autofocus="true"  required="true" placeholder="Nombre de" >
+    <mat-label>Usuario</mat-label>
+    <input type="text" matInput placeholder="Nombre de usuario">
+  </mat-form-field>
+
+  <mat-form-field type="password" class="login-password " required="true" placeholder="Password">
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Contraseña">
+  </mat-form-field>
+
+  <button mat-button mat-flat-button color="primary"
+  (click)="onLogin()">
+  <mat-icon>save</mat-icon>
+
+  Ingresar
+</button>
+
+
+
+  <div  class="flex justify-content-end mt-2" autofocus="true">
+    <button>
+      <a routerLink="/auth/new-account"  >
+        <b>¿No tienes cuenta, creala aqui?</b>
+      </a>
+    </button>
+  </div>
+
+</div>
+
+<div class="underlay-photo"></div>
+<!-- <div class="underlay-black"></div> -->
